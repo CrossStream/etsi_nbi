@@ -74,6 +74,7 @@ ENV OSMNBI_AUTHENTICATION_BACKEND               internal
 #ENV OSMNBI_AUTHENTICATION_SERVICE_PASSWORD      nbi
 #ENV OSMNBI_AUTHENTICATION_SERVICE_PROJECT       service
 
+RUN pip install pyangbind
 # Run app.py when the container launches
 CMD ["python3", "/usr/lib/python3/dist-packages/osm_nbi/nbi.py"]
 
