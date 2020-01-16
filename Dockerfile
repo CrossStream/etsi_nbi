@@ -30,7 +30,8 @@ RUN apt-get update && apt-get -y install wget git make python python3 python-pip
 
 # Uncomment this block to generate automatically a debian package and show info
 # # Set the working directory to /app
-WORKDIR /app
+# WORKDIR /app
 # # Copy the current directory contents into the container at /app
-ADD . /app
-CMD /app/devops-stages/stage-build.sh && find -name "*.deb" -exec dpkg -I  {} ";"
+# ADD . /app
+# CMD /app/devops-stages/stage-build.sh && find -name "*.deb" -exec dpkg -I  {} ";"
+
